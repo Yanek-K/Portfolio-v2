@@ -1,0 +1,77 @@
+/* General styling for the services section */
+.services {
+  display: flex;
+  justify-content: center;
+  margin: var(--margin-standard);
+  margin-left: 20rem;
+}
+
+.services__wrap {
+  display: flex;
+}
+
+.services__wrap__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.services__wrap__title {
+  display: flex;
+  flex-direction: column;
+}
+
+.subtitle {
+  color: var(--green);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+.services__wrap__title h2 {
+  font-size: 2.5rem;
+  color: var(--white);
+  margin: 0;
+}
+
+.services__wrap__cards {
+  display: flex;
+  gap: 20px;
+  width: 1200px;
+}
+
+.service-card {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 400px;
+}
+
+.card-number {
+  color: var(--green);
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  margin: 90px 0 10px 0;
+  color: var(--white);
+}
+
+.service-card p {
+  flex: 1;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  color: var(--white);
+}
+
+.horizontal-line {
+  width: 50%;
+  height: 1px;
+  background-color: var(--white);
+}
