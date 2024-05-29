@@ -166,13 +166,18 @@ img {
   display: block;
 }
 
-button {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
+.button {
+  max-width: 150px;
+  background-color: var(--navy);
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--green);
+  border-radius: 40px;
+  color: var(--green);
+  text-align: center;
   cursor: pointer;
-  border: none;
-  background: none;
+  text-decoration: none;
+  font-size: 0.75rem;
+  letter-spacing: 0.2rem;
 }
 
 code {
@@ -189,47 +194,41 @@ code {
   --primary-font-family: "Montserrat", -apple-system, BlinkMacSystemFont,
     "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif;
-}
-p {
-  margin-bottom: 1.5em; /* Add space between paragraphs */
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  font-weight: 600;
+  --padding-small: 1rem;
+  --padding-medium: 4rem;
+  --padding-large: 6rem;
+  --padding-xlarge: 8rem;
+  --margin-standard: 3rem 9rem 1rem 11rem;
 }
 
 h1 {
-  font-size: 2.5em;
-  margin-bottom: 0.5em;
+  font-size: 3.5rem;
 }
 
 h2 {
-  font-size: 2em;
-  margin-bottom: 0.75em;
+  font-size: 2rem;
 }
 
 h3 {
-  font-size: 1.75em;
-  margin-bottom: 1em;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
 }
 
 h4 {
-  font-size: 1.5em;
-  margin-bottom: 1.25em;
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 h5 {
-  font-size: 1.25em;
-  margin-bottom: 1.5em;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
 }
 
 h6 {
-  font-size: 1em;
-  margin-bottom: 1.75em;
+  font-size: 1rem;
+  margin-bottom: 1.75rem;
+}
+
+p {
+  font-size: 1.3rem;
 }

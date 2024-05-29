@@ -1,0 +1,41 @@
+.hero {
+  display: flex;
+  margin: var(--margin-standard);
+}
+
+.hero__wrap {
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--padding-xlarge);
+}
+
+.hero__wrap__intro {
+  color: var(--green);
+}
+
+.hero__wrap__name {
+  color: var(--white);
+  margin-bottom: -1rem;
+}
+
+.hero__wrap__info {
+  color: var(--slate);
+}
+
+.hero__wrap__about {
+  margin-top: 0.5rem;
+  max-width: 500px;
+  font-size: 1.3rem;
+  color: var(--white);
+}
+
+.hero__wrap__button {
+  margin-top: 2rem;
+}
+
+@media only screen and (min-width: 1500px) {
+  .hero {
+    margin-top: 5rem;
+    margin-left: 13rem;
+  }
+}

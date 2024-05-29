@@ -1,6 +1,6 @@
 .navbar {
   color: var(--white);
-  padding: 3rem 7rem;
+  padding: var(--margin-standard);
   align-items: center;
 }
 
@@ -16,7 +16,6 @@
 
 .navbar__wrap__left {
   cursor: pointer;
-  margin-left: 2rem;
 }
 
 .navbar__wrap__right {
@@ -32,4 +31,11 @@
 
 .navbar__wrap__right ul li {
   margin-right: 20px; /* Adjust the margin value to your preference */
+  letter-spacing: 0.13rem;
+}
+
+@media only screen and (min-width: 1500px) {
+  .navbar__wrap__left {
+    margin-left: 1rem;
+  }
 }
