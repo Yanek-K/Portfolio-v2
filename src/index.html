@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A brief description of your website or page, including key topics or keywords.">
+    <meta name="keywords" content="keyword1, keyword2, keyword3">
+    <meta name="author" content="Your Name or Company Name">
+    <link rel="canonical" href="https://www.yourwebsite.com/your-page-url">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Your Website Title">
+    <meta property="og:description" content="A brief description of your website or page.">
+    <meta property="og:image" content="https://www.yourwebsite.com/image.jpg">
+    <meta property="og:url" content="https://www.yourwebsite.com/your-page-url">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Your Website Title">
+    <meta name="twitter:description" content="A brief description of your website or page.">
+    <meta name="twitter:image" content="https://www.yourwebsite.com/image.jpg">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Website",
+      "url": "https://www.yourwebsite.com/",
+      "name": "Your Website Name",
+      "description": "A brief description of your website or page.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Your Company Name"
+      },
+      "image": "https://www.yourwebsite.com/image.jpg"
+    }
+    </script>
+
+    <title>Your Website Title - Key Topic or Keyword</title>
+
   <body>
     <div id="app"></div>
-    <script src="index.bundle.js"></script>
   </body>
 </html>

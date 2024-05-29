@@ -1,5 +1,6 @@
 const path = require("path");
-const MiniCss = require("mini-css-extract-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: "./src/index.js",
@@ -20,16 +21,24 @@ module.exports = {
         },
       },
       {
-        test: /\.scss$/,
-        use: [MiniCss.loader, "css-loader", "sass-loader"],
+        test: /\.css$/,
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
     ],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./src/index.html",
+      filename: "index.html",
+    }),
+    new MiniCssExtractPlugin({
+      filename: "[name].css",
+    }),
+  ],
   devServer: {
     static: {
       directory: path.join(__dirname, "dist"),
     },
-    watchFiles: ["src/**/*", "public/**/*"],
     hot: true,
     port: 3000,
     open: true,
@@ -37,5 +46,4 @@ module.exports = {
   resolve: {
     extensions: [".js", ".jsx"],
   },
-  plugins: [new MiniCss()],
 };
