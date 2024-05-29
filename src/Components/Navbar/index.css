@@ -32,10 +32,10 @@
 .navbar__wrap__right ul li {
   margin-right: 20px; /* Adjust the margin value to your preference */
   letter-spacing: 0.13rem;
+  font-size: 0.9rem;
 }
 
-@media only screen and (min-width: 1500px) {
-  .navbar__wrap__left {
-    margin-left: 1rem;
-  }
+.navbar__wrap__right .number {
+  color: var(--green);
+  margin-right: 5px;
 }

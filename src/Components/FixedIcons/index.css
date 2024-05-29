@@ -1,0 +1,43 @@
+/* src/components/FixedIcons.css */
+
+.fixed-icons-container {
+  position: fixed;
+  top: 85%;
+  left: 11rem;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fixed-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adjust the gap between the icons */
+}
+
+.fixed-icons .icon {
+  background: var(--white);
+  color: var(--navy);
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.fixed-icons .icon:hover {
+  background: var(--green);
+}
+
+.vertical-line {
+  width: 2px; /* Width of the vertical line */
+  height: 150px; /* Height of the vertical line */
+  background: var(--green); /* Color of the vertical line */
+  margin-top: 20px; /* Space between the last icon and the line */
+}

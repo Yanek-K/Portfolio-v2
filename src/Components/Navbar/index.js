@@ -6,24 +6,24 @@ const Navbar = () => {
     <div className="navbar">
       <div className="navbar__wrap">
         <div className="navbar__wrap__left">
-          <h1>YK</h1>
+          <h2>YK</h2>
         </div>
         <nav className="navbar__wrap__right">
           <ul>
             <li a href="#">
-              01. Services
+              <span className="number">01.</span> Services
             </li>
             <li a href="#">
-              02. Experience
+              <span className="number">02.</span> Experience
             </li>
             <li a href="#">
-              03. Projects
+              <span className="number">03.</span> Projects
             </li>
             <li a href="#">
-              04. About
+              <span className="number">04.</span> About
             </li>
             <li a href="#">
-              05. Contact
+              <span className="number">05.</span> Contact
             </li>
           </ul>
         </nav>
