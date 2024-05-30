@@ -167,7 +167,7 @@ img {
 }
 
 .button {
-  max-width: 170px;
+  max-width: 180px;
   background-color: var(--navy);
   padding: 0.6rem 1.2rem;
   border: 1px solid var(--green);

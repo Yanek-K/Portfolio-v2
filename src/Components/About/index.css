@@ -1,0 +1,101 @@
+/* General styling for the mystory section */
+.mystory-section {
+  padding: 12rem 7rem;
+  margin: var(--margin-standard);
+}
+
+.mystory__wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mystory__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.mystory__title {
+  display: flex;
+  flex-direction: column;
+}
+
+.subtitle {
+  color: var(--green);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+.mystory__title h2 {
+  font-size: 2.5rem;
+  color: var(--white);
+  margin: 0;
+}
+
+.view-linkedin-button {
+  padding: 10px 20px;
+  border: 2px solid #28a745;
+  background-color: transparent;
+  color: #28a745;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.view-linkedin-button:hover {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.mystory__content {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.mystory__image {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  height: 300px; /* Adjust height as needed */
+}
+
+.mystory__text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mystory__text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: var(--white);
+}
+
+.mystory__text p {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: var(--white);
+}
+
+.mystory__cta {
+  text-align: left;
+  width: 40%;
+  margin-top: 10rem;
+}
+
+.mystory__cta h3 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: var(--white);
+}
+
+.mystory__cta p {
+  font-size: 1.25rem;
+  color: var(--white);
+}

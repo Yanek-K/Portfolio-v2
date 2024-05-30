@@ -5,6 +5,9 @@ import "./app.css";
 import FixedIcons from "./Components/FixedIcons";
 import Services from "./Components/Services";
 import Experience from "./Components/Experience";
+import Projects from "./Components/Projects";
+import About from "./Components/About";
+import Footer from "./Components/Footer";
 
 const App = () => {
   return (
@@ -14,6 +17,9 @@ const App = () => {
       <Hero />
       <Services />
       <Experience />
+      <Projects />
+      <About />
+      <Footer />
     </div>
   );
 };
