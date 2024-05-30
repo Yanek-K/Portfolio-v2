@@ -3,7 +3,7 @@
 .fixed-icons-container {
   position: fixed;
   top: 85%;
-  left: 11rem;
+  left: 4rem;
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
@@ -22,8 +22,8 @@
   padding: 10px;
   border-radius: 50%;
   text-align: center;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,7 +36,7 @@
 }
 
 .vertical-line {
-  width: 2px; /* Width of the vertical line */
+  width: 1px; /* Width of the vertical line */
   height: 150px; /* Height of the vertical line */
   background: var(--green); /* Color of the vertical line */
   margin-top: 20px; /* Space between the last icon and the line */

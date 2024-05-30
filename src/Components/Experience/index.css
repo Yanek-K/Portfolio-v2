@@ -1,0 +1,127 @@
+/* General styling for the experience section */
+.experience-section {
+  padding: 12rem 7rem;
+  margin: var(--margin-standard);
+  margin-left: 15rem;
+}
+
+.experience__wrap {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: flex-start; /* To center but slightly to the left */
+}
+
+.experience__wrap__left {
+  position: sticky;
+  top: 20px;
+  flex: 0 0 45%; /* Give more space to the left component */
+  padding-right: 20px;
+}
+
+.experience__wrap__left .subtitle {
+  color: var(--green);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+.experience__wrap__left h2 {
+  font-size: 2.5rem;
+  color: var(--white);
+  margin: 0;
+}
+
+.experience__wrap__left p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+  color: var(--white);
+}
+
+.experience__wrap__left a {
+  color: var(--green);
+  text-decoration: none;
+}
+
+.experience__wrap__right {
+  flex: 1;
+  max-height: 70vh; /* Limit the height to enable scrolling */
+  overflow-y: auto;
+}
+
+/* Scrollbar styles for Webkit browsers (Chrome, Safari) */
+.experience__wrap__right::-webkit-scrollbar {
+  width: 12px; /* Adjust width for vertical scrollbar */
+}
+
+.experience__wrap__right::-webkit-scrollbar-thumb {
+  background-color: var(--white); /* Color of the scroll thumb */
+  border-radius: 10px; /* Roundness of the scroll thumb */
+  border: 3px solid var(--white); /* Padding around the scroll thumb */
+}
+
+.experience__wrap__right::-webkit-scrollbar-track {
+  background: var(--white); /* Background color of the scrollbar track */
+}
+
+/* Scrollbar styles for Firefox */
+.experience__wrap__right {
+  scrollbar-width: thin; /* Thin scrollbar width */
+  scrollbar-color: var(--white) var(--white); /* Scroll thumb and track colors */
+}
+
+/* Scrollbar styles for Edge and IE */
+.experience__wrap__right {
+  -ms-overflow-style: none; /* Hide default scrollbar */
+}
+
+.experience__wrap__right::-ms-scrollbar {
+  width: 12px; /* Adjust width for vertical scrollbar */
+}
+
+.experience__wrap__right::-ms-scrollbar-thumb {
+  background-color: var(--white); /* Color of the scroll thumb */
+  border-radius: 10px; /* Roundness of the scroll thumb */
+  border: 3px solid var(--white); /* Padding around the scroll thumb */
+}
+
+.experience__wrap__right::-ms-scrollbar-track {
+  background: var(--white); /* Background color of the scrollbar track */
+}
+
+.job-entry {
+  margin-bottom: 80px;
+}
+
+.job-date {
+  color: var(--green);
+  margin-bottom: 5px;
+}
+
+.job-entry h3 {
+  font-size: 1.5rem;
+  margin: 0 0 10px 0;
+  color: var(--white);
+}
+
+.job-entry p {
+  margin: 0 0 20px 0;
+  font-size: 1.1rem;
+  width: 70%;
+}
+
+.job-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.tag {
+  background-color: var(--navy);
+  border: 1px solid var(--green);
+  color: var(--green);
+  padding: 0.22rem 0.8rem;
+  border-radius: 40px;
+  font-size: 0.8rem;
+}

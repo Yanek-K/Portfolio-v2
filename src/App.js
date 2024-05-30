@@ -4,6 +4,7 @@ import Hero from "./Components/Hero";
 import "./app.css";
 import FixedIcons from "./Components/FixedIcons";
 import Services from "./Components/Services";
+import Experience from "./Components/Experience";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <FixedIcons />
       <Hero />
       <Services />
+      <Experience />
     </div>
   );
 };
