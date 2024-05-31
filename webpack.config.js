@@ -41,7 +41,7 @@ module.exports = {
     },
     hot: true,
     port: 3000,
-    open: true,
+    // open: true,
   },
   resolve: {
     extensions: [".js", ".jsx"],

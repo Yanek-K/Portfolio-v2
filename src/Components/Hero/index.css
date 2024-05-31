@@ -47,14 +47,33 @@
 
 @media (max-width: 1000px) {
   .hero {
+    margin-right: 0rem;
     margin-left: 5rem;
-    width: 100%;
+    width: 90%;
+    height: 100vh;
+  }
+
+  .hero__wrap__info {
+    line-height: normal;
+    /* width: 400px; */
   }
 
   .hero__wrap__about {
     margin-top: 0.9rem;
-    max-width: 90%;
+    max-width: 80%;
     font-size: 1.3rem;
     color: var(--white);
+  }
+}
+
+@media (max-width: 630px) {
+  .hero__wrap__about {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    margin-left: 1.3rem;
   }
 }
