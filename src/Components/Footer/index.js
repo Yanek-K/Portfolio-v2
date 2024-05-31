@@ -23,15 +23,17 @@ const Footer = () => {
           </div>
           <div className="footer__contact">
             <h4>LET'S TALK</h4>
-            <p>info@template.com</p>
-            <p>(555) 555-5555</p>
-            <p>Submit a Question</p>
+            <ul>
+              <li>info@template.com</li>
+              <li>(555) 555-5555</li>
+              <li>Submit a Question</li>
+            </ul>
           </div>
         </div>
       </div>
       <div className="footer__bottom">
         <p>Coded by Yanek K.</p>
-        <p>Powered by React</p>
+        <p>Overpowered with React</p>
       </div>
     </footer>
   );

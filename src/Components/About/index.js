@@ -10,7 +10,7 @@ const About = () => {
             <span className="subtitle">ABOUT ME</span>
             <h2>My Story</h2>
           </div>
-          <button className="view-linkedin-button">View My LinkedIn</button>
+          <button className="button">View My LinkedIn</button>
         </div>
         <div className="mystory__content">
           <div
