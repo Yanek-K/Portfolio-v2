@@ -4,6 +4,7 @@
   height: 90vh;
   margin: var(--margin-standard);
   margin-left: 2rem;
+  z-index: 1;
 }
 
 .hero__wrap {
@@ -41,5 +42,19 @@
   .hero {
     margin-top: 5rem;
     margin-left: -5rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .hero {
+    margin-left: 5rem;
+    width: 100%;
+  }
+
+  .hero__wrap__about {
+    margin-top: 0.9rem;
+    max-width: 90%;
+    font-size: 1.3rem;
+    color: var(--white);
   }
 }

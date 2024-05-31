@@ -41,3 +41,9 @@
   background: var(--green); /* Color of the vertical line */
   margin-top: 20px; /* Space between the last icon and the line */
 }
+
+@media (max-width: 1200px) {
+  .fixed-icons-container {
+    display: none;
+  }
+}

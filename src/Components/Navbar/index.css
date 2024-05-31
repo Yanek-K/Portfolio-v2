@@ -1,17 +1,21 @@
+/* Adjusted Navbar Styles */
 .navbar {
   color: var(--white);
   padding: var(--margin-standard);
   align-items: center;
+  z-index: 1010; /* Ensuring highest z-index */
+  position: sticky;
+  top: 0;
+  background-color: var(--navy); /* Ensure it has a background color */
+  width: 100%; /* Full width */
 }
 
 .navbar__wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 85%;
-  height: 75px;
-  position: fixed;
-  z-index: 1;
+  width: 100%;
+  height: 65px; /* Set height of the navbar */
 }
 
 .navbar__wrap__left {
@@ -38,4 +42,72 @@
 .navbar__wrap__right .number {
   color: var(--green);
   margin-right: 5px;
+}
+
+/* Burger Menu Styles */
+.burger-menu {
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.burger-menu div {
+  width: 30px;
+  height: 3px;
+  background-color: var(--white); /* Adjust color as needed */
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 1200px) {
+  .navbar__wrap__right {
+    display: none; /* Hide the right menu items */
+  }
+
+  .burger-menu {
+    display: flex; /* Show the burger menu */
+  }
+}
+
+/* Optional: Add styles for the open state of the burger menu */
+.burger-menu.open div:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+
+.burger-menu.open div:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-menu.open div:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+/* Responsive menu styles */
+.responsive-menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 100px; /* Below the navbar */
+  width: 100%;
+  background-color: var(--navy); /* Same as the navbar color */
+  z-index: 1000;
+}
+
+.responsive-menu a {
+  color: var(--green); /* Adjust as needed */
+  padding: 1em;
+  text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+  .responsive-menu {
+    display: flex;
+  }
+  .navbar {
+    padding-left: 4rem;
+  }
 }
