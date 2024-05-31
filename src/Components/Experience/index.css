@@ -9,7 +9,8 @@
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
-  justify-content: flex-start; /* To center but slightly to the left */
+  /* justify-content: flex-start; To center but slightly to the left */
+  gap: 40px;
 }
 
 .experience__wrap__left {
@@ -45,7 +46,7 @@
 }
 
 .experience__wrap__right {
-  flex: 1;
+  flex: 1 1 55%;
   max-height: 70vh; /* Limit the height to enable scrolling */
   overflow-y: auto;
 }
@@ -124,4 +125,62 @@
   padding: 0.22rem 0.8rem;
   border-radius: 40px;
   font-size: 0.8rem;
+}
+
+@media (max-width: 1600px) {
+  .experience-section {
+    padding: 12rem 2rem 12rem 7rem;
+    margin: var(--margin-standard);
+    /* margin-left: 2rem; */
+    margin-left: 7rem; /* Reduce the left margin to take up less space */
+  }
+
+  .experience__wrap {
+    /* max-width: 100%; */
+    padding: 0 2rem; /* Adjust padding to take up less space */
+    gap: 80px;
+  }
+
+  .experience__wrap__left {
+    flex: 0 0 40%; /* Adjust left component width */
+  }
+
+  .experience__wrap__right {
+    flex: 1; /* Adjust right component width */
+  }
+  .job-entry p {
+    margin: 0 0 20px 0;
+    font-size: 1.1rem;
+    width: 90%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .experience-section {
+    padding: 12rem 1rem;
+    margin: var(--margin-standard);
+    margin-left: 2rem;
+  }
+
+  .experience__wrap {
+    flex-direction: column; /* Stack the left and right components vertically */
+  }
+
+  .experience__wrap__left,
+  .experience__wrap__right {
+    flex: 1 1 100%; /* Make both components take up full width */
+    padding: 0; /* Remove padding */
+    max-width: 100%; /* Ensure they take up full width */
+  }
+
+  .experience__wrap__left {
+    margin-bottom: 2rem; /* Add some space between the left and right components */
+  }
+  .experience__wrap__left p {
+    display: none;
+  }
+
+  .experience__wrap__left h2 {
+    margin-bottom: -4rem;
+  }
 }
