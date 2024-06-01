@@ -91,3 +91,22 @@
   color: var(--white);
   font-size: 0.9rem; /* Smaller text size */
 }
+
+@media (max-width: 1000px) {
+  .footer__left p {
+    font-size: 0.8rem;
+    width: 60%;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer__left {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .footer__navigation {
+    display: none;
+  }
+}

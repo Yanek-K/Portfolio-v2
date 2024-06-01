@@ -35,17 +35,6 @@
   margin: 0;
 }
 
-.view-linkedin-button {
-  padding: 10px 20px;
-  border: 2px solid #28a745;
-  background-color: transparent;
-  color: #28a745;
-  text-transform: uppercase;
-  font-weight: bold;
-  border-radius: 30px;
-  cursor: pointer;
-}
-
 .view-linkedin-button:hover {
   background-color: #28a745;
   color: #fff;
@@ -98,4 +87,44 @@
 .mystory__cta p {
   font-size: 1.25rem;
   color: var(--white);
+}
+
+@media (max-width: 1200px) {
+  .mystory-section {
+    padding: 12rem 1rem;
+    margin: var(--margin-standard);
+    margin-left: 3rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .mystory__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .mystory__content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mystory__image {
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    margin-bottom: 20px;
+  }
+
+  .mystory__text {
+    width: 100%;
+  }
+
+  .mystory__cta {
+    width: 100%;
+    text-align: left;
+    margin-top: 8rem;
+  }
+
+  .view-linkedin-button {
+    display: none;
+  }
 }
