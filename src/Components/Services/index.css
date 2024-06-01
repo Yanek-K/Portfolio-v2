@@ -1,4 +1,3 @@
-/* General styling for the services section */
 .services {
   display: flex;
   justify-content: center;
@@ -84,8 +83,6 @@
     width: 80%;
     margin-bottom: 0rem;
   }
-  /* .services__wrap__cards {
-    flex-direction: column; /* Change cards to stack vertically */
 
   .services__wrap__header {
     display: flex;
@@ -96,9 +93,9 @@
   }
 
   .service-card {
-    width: 100%; /* Full width for each card */
-    max-width: 400px; /* Max width for the card */
-    margin-bottom: 20px; /* Space between cards */
+    width: 100%; 
+    max-width: 400px; 
+    margin-bottom: 20px; 
   }
 }
 
@@ -117,12 +114,10 @@
 @media (max-width: 900px) {
   .services {
     width: 80%;
-    /* margin-left: 2rem; */
   }
   .services__wrap__cards {
     display: flex;
-    gap: 0px;
-    /* width: 100%; */
+    gap: 0px'
   }
 
   .view-work-button {
@@ -131,10 +126,6 @@
 }
 
 @media (max-width: 700px) {
-  .services {
-    /* width: 0%; */
-    /* margin-left: -2.4rem;/ */
-  }
   .services__wrap__cards {
     flex-direction: column;
   }
