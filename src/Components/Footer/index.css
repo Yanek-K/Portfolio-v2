@@ -1,8 +1,7 @@
-/* General styling for the footer section */
 .footer {
   padding: 40px 20px;
   color: #fff;
-  font-size: 0.875rem; /* Smaller text size throughout */
+  font-size: 0.875rem;
 }
 
 .footer__wrap {
@@ -89,7 +88,7 @@
   margin: 0;
   letter-spacing: 0.2rem;
   color: var(--white);
-  font-size: 0.9rem; /* Smaller text size */
+  font-size: 0.9rem;
 }
 
 @media (max-width: 1000px) {

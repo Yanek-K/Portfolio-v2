@@ -131,7 +131,7 @@
   .experience-section {
     padding: 12rem 2rem 12rem 7rem;
     margin: var(--margin-standard);
-    /* margin-left: 2rem; */
+    margin-top: 0rem;
     margin-left: 7rem; /* Reduce the left margin to take up less space */
   }
 
@@ -157,9 +157,9 @@
 
 @media (max-width: 1200px) {
   .experience-section {
-    padding: 12rem 1rem;
+    padding: 5rem 0rem 3rem 1rem;
     margin: var(--margin-standard);
-    margin-left: 2rem;
+    margin-left: -0.5rem;
   }
 
   .experience__wrap {

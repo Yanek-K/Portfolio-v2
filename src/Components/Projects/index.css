@@ -89,7 +89,7 @@
 
 @media (max-width: 1200px) {
   .projects-section {
-    padding: 0rem 3rem;
+    padding: 2rem 0rem 0rem 2rem;
     margin-left: 2rem;
   }
 
@@ -102,7 +102,7 @@
 
 @media (max-width: 900px) {
   .projects-section {
-    padding: 0rem 0rem;
+    padding: 2rem 0.7rem;
   }
   .view-github-button {
     display: none;

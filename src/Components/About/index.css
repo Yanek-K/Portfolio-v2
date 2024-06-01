@@ -1,6 +1,6 @@
 /* General styling for the mystory section */
 .mystory-section {
-  padding: 12rem 7rem;
+  padding: 12rem 5rem;
   margin: var(--margin-standard);
 }
 
@@ -91,13 +91,17 @@
 
 @media (max-width: 1200px) {
   .mystory-section {
-    padding: 12rem 1rem;
+    padding: 9rem 1rem;
     margin: var(--margin-standard);
     margin-left: 3rem;
   }
 }
 
 @media (max-width: 900px) {
+  .mystory-section {
+    margin-left: 1.5rem;
+    padding: 3rem 1rem;
+  }
   .mystory__header {
     flex-direction: column;
     align-items: flex-start;

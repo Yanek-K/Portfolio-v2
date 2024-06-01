@@ -80,8 +80,9 @@
 
 @media (max-width: 1600px) {
   .services {
-    /* margin: 3rem 22rem 1rem 25rem; */
+    margin-top: 0rem;
     width: 80%;
+    margin-bottom: 0rem;
   }
   /* .services__wrap__cards {
     flex-direction: column; /* Change cards to stack vertically */
@@ -104,7 +105,7 @@
 @media (max-width: 1200px) {
   .services {
     width: 90%;
-    margin-left: 4rem;
+    margin-left: 2.2rem;
   }
   .services__wrap__cards {
     display: flex;
@@ -116,7 +117,7 @@
 @media (max-width: 900px) {
   .services {
     width: 80%;
-    /* margin-left: 0rem; */
+    /* margin-left: 2rem; */
   }
   .services__wrap__cards {
     display: flex;
@@ -130,6 +131,10 @@
 }
 
 @media (max-width: 700px) {
+  .services {
+    /* width: 0%; */
+    /* margin-left: -2.4rem;/ */
+  }
   .services__wrap__cards {
     flex-direction: column;
   }
