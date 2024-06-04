@@ -1,5 +1,6 @@
 import React from "react";
 import "./index.css";
+import yanekPortrait from "../../Assets/Yanek_Portrait.jpg";
 
 const About = () => {
   return (
@@ -17,7 +18,7 @@ const About = () => {
         <div className="mystory__content">
           <div
             className="mystory__image"
-            style={{ backgroundImage: "url('your-image-url.jpg')" }}
+            style={{ backgroundImage: `url(${yanekPortrait})` }}
           ></div>
           <div className="mystory__text">
             <h3>Hello! I'm a creative designer living in New York City.</h3>
