@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./index.css";
 
 const Footer = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+  const handleScroll = (e, id) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    const yOffset = -130; // Adjust this value to match the height of your navbar and barrier
+    const y =
+      element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({ top: y, behavior: "smooth" });
+    setMenuOpen(false); // Close the menu after clicking a link
+  };
   return (
     <footer className="footer">
       <div className="footer__wrap">
@@ -16,17 +30,36 @@ const Footer = () => {
           <div className="footer__navigation">
             <h4>NAVIGATION</h4>
             <ul>
-              <li>Services</li>
-              <li>Projects</li>
-              <li>About</li>
+              <li>
+                <a
+                  href="#services"
+                  onClick={(e) => handleScroll(e, "services")}
+                >
+                  Services
+                </a>
+              </li>
+              <li>
+                {" "}
+                <a
+                  href="#projects"
+                  onClick={(e) => handleScroll(e, "projects")}
+                >
+                  Projects
+                </a>
+              </li>
+              <li>
+                <a href="#about" onClick={(e) => handleScroll(e, "about")}>
+                  About
+                </a>
+              </li>
             </ul>
           </div>
           <div className="footer__contact">
             <h4>LET'S TALK</h4>
             <ul>
-              <li>info@template.com</li>
-              <li>(555) 555-5555</li>
-              <li>Submit a Question</li>
+              <li>yanek.dev@gmail.com</li>
+              <li>Toronto, ON</li>
+              <li>Canada</li>
             </ul>
           </div>
         </div>

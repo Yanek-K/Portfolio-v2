@@ -16,11 +16,21 @@ const App = () => {
 
       <FixedIcons />
       <Hero />
-      <Services />
-      <Experience />
-      <Projects />
-      <About />
-      <Footer />
+      <div id="services">
+        <Services />
+      </div>
+      <div id="experience">
+        <Experience />
+      </div>
+      <div id="projects">
+        <Projects />
+      </div>
+      <div id="about">
+        <About />
+      </div>
+      <div id="contact">
+        <Footer />
+      </div>
     </div>
   );
 };

@@ -3,6 +3,7 @@
   justify-content: center;
   margin: var(--margin-standard);
   margin-left: 15rem;
+  padding-bottom: 10rem;
 }
 
 .services__wrap {

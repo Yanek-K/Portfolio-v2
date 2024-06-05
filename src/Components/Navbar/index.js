@@ -8,6 +8,16 @@ const Navbar = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const handleScroll = (e, id) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    const yOffset = -130; // Adjust this value to match the height of your navbar and barrier
+    const y =
+      element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({ top: y, behavior: "smooth" });
+    setMenuOpen(false); // Close the menu after clicking a link
+  };
+
   return (
     <div className="navbar">
       <div className="navbar__wrap">
@@ -17,27 +27,30 @@ const Navbar = () => {
         <nav className="navbar__wrap__right">
           <ul>
             <li>
-              <a href="#">
+              <a href="#services" onClick={(e) => handleScroll(e, "services")}>
                 <span className="number">01.</span> Services
               </a>
             </li>
             <li>
-              <a href="#">
+              <a
+                href="#experience"
+                onClick={(e) => handleScroll(e, "experience")}
+              >
                 <span className="number">02.</span> Experience
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#projects" onClick={(e) => handleScroll(e, "projects")}>
                 <span className="number">03.</span> Projects
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#about" onClick={(e) => handleScroll(e, "about")}>
                 <span className="number">04.</span> About
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#contact" onClick={(e) => handleScroll(e, "contact")}>
                 <span className="number">05.</span> Contact
               </a>
             </li>
@@ -51,11 +64,21 @@ const Navbar = () => {
       </div>
       {menuOpen && (
         <div className="responsive-menu">
-          <a href="#">Services</a>
-          <a href="#">Experience</a>
-          <a href="#">Projects</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
+          <a href="#services" onClick={(e) => handleScroll(e, "services")}>
+            Services
+          </a>
+          <a href="#experience" onClick={(e) => handleScroll(e, "experience")}>
+            Experience
+          </a>
+          <a href="#projects" onClick={(e) => handleScroll(e, "projects")}>
+            Projects
+          </a>
+          <a href="#about" onClick={(e) => handleScroll(e, "about")}>
+            About
+          </a>
+          <a href="#contact" onClick={(e) => handleScroll(e, "contact")}>
+            Contact
+          </a>
         </div>
       )}
     </div>

@@ -1,5 +1,6 @@
 .projects-section {
   margin: var(--margin-standard);
+  padding-bottom: 8rem;
 }
 
 .projects__wrap {
