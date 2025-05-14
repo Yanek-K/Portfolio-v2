@@ -27,17 +27,22 @@ const Navbar = () => {
         <nav className="navbar__wrap__right">
           <ul>
             <li>
+              <a href="/index.html">
+                <span className="number">01.</span> Home
+              </a>
+            </li>
+            <li>
               <a href="/about.html">
-                <span className="number">01.</span> About
+                <span className="number">02.</span> About
               </a>
             </li>
             <li>
               <a href="/blog.html">
-                <span className="number">02.</span> Blog
+                <span className="number">03.</span> Blog
               </a>
             </li>
             <li>
-              <a href="/.html">
+              <a href="/contact.html">
                 <span className="number">04.</span> Contact
               </a>
             </li>

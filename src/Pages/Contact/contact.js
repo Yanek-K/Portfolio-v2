@@ -1,7 +1,7 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import Blog from "./Pages/Blog";
-import "./app.css";
+import Contact from "./Contact.jsx";
+import "./../Home/App.js";
 
 const root = createRoot(document.getElementById("app"));
-root.render(<Blog />);
+root.render(<Contact />);

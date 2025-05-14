@@ -5,14 +5,16 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   entry: {
     main: "./src/index.js",
-    blog: "./src/blog.js",
-    about: "/src/about.js",
+    blog: "./src/Pages/Blog/blog.js",
+    about: "/src/Pages/About/about.js",
+    contact: "/src/Pages/Contact/contact.js",
   },
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "index.bundle.js",
     filename: "blog.bundle.js",
     filename: "about.bundle.js",
+    filename: "contact.bundle.js",
     filename: "[name].bundle.js",
     clean: true,
   },
@@ -49,20 +51,20 @@ module.exports = {
       chunks: ["main"],
     }),
     new HtmlWebpackPlugin({
-      template: "./src/about.html",
+      template: "./src/Pages/About/about.html",
       filename: "about.html",
       chunks: ["about"],
     }),
     new HtmlWebpackPlugin({
-      template: "./src/blog.html",
+      template: "./src/Pages/Blog/blog.html",
       filename: "blog.html",
       chunks: ["blog"],
     }),
-    //     new HtmlWebpackPlugin({
-    //   template: "./src/contact.html",
-    //   filename: "contact.html",
-    //   chunks: ["contact"],
-    // }),
+    new HtmlWebpackPlugin({
+      template: "./src/Pages/Contact/contact.html",
+      filename: "contact.html",
+      chunks: ["contact"],
+    }),
     new MiniCssExtractPlugin({
       filename: "[name].css",
     }),
