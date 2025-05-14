@@ -27,31 +27,18 @@ const Navbar = () => {
         <nav className="navbar__wrap__right">
           <ul>
             <li>
-              <a href="#services" onClick={(e) => handleScroll(e, "services")}>
-                <span className="number">01.</span> Services
+              <a href="/about.html">
+                <span className="number">01.</span> About
               </a>
             </li>
             <li>
-              <a
-                href="#experience"
-                onClick={(e) => handleScroll(e, "experience")}
-              >
-                <span className="number">02.</span> Experience
+              <a href="/blog.html">
+                <span className="number">02.</span> Blog
               </a>
             </li>
             <li>
-              <a href="#projects" onClick={(e) => handleScroll(e, "projects")}>
-                <span className="number">03.</span> Projects
-              </a>
-            </li>
-            <li>
-              <a href="#about" onClick={(e) => handleScroll(e, "about")}>
-                <span className="number">04.</span> About
-              </a>
-            </li>
-            <li>
-              <a href="#contact" onClick={(e) => handleScroll(e, "contact")}>
-                <span className="number">05.</span> Contact
+              <a href="/.html">
+                <span className="number">04.</span> Contact
               </a>
             </li>
           </ul>
@@ -64,14 +51,8 @@ const Navbar = () => {
       </div>
       {menuOpen && (
         <div className="responsive-menu">
-          <a href="#services" onClick={(e) => handleScroll(e, "services")}>
-            Services
-          </a>
           <a href="#experience" onClick={(e) => handleScroll(e, "experience")}>
             Experience
-          </a>
-          <a href="#projects" onClick={(e) => handleScroll(e, "projects")}>
-            Projects
           </a>
           <a href="#about" onClick={(e) => handleScroll(e, "about")}>
             About

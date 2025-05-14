@@ -8,12 +8,12 @@ const Experience = () => {
         <div className="experience__wrap__left">
           <span className="subtitle">EXPERIENCE</span>
           <h2>Where I have Worked</h2>
+          {/* <p>
+            Front-End Developer at <a href="#">First Principle Consultants</a>
+          </p>
           <p>
             Developer and Digital Marketing Expert at{" "}
             <a href="#">Cria Design Agency</a>
-          </p>
-          <p>
-            Front-End Developer at <a href="#">First Principle Consultants</a>
           </p>
           <p>
             Front-End Developer at <a href="#">MenuCloud</a>
@@ -21,16 +21,16 @@ const Experience = () => {
           <p>
             Co-Founder and Developer at{" "}
             <a href="#">Andre Laredo Fine Art Prints</a>
-          </p>
+          </p> */}
         </div>
         <div className="experience__wrap__right">
           <div className="job-entry">
             <span className="job-date">Oct 2023 - Present</span>
             <h3>
-              Developer and Digital Marketing Expert at{" "}
-              <a href="#">Cria Design Agency</a>
+              Project Manager at <a href="#">First Principle Consultants</a>
             </h3>
-            <p>
+            <br />
+            {/* <p>
               <ul>
                 <li>
                   - Expertly utilized Webflow for website creation, employing
@@ -53,7 +53,7 @@ const Experience = () => {
                   specific market needs.
                 </li>
               </ul>
-            </p>
+            </p> */}
             <div className="job-tags">
               <span className="tag">Webflow</span>
               <span className="tag">Figma</span>
@@ -67,9 +67,11 @@ const Experience = () => {
           <div className="job-entry">
             <span className="job-date">Oct 2023 - Present</span>
             <h3>
-              Front-End Developer at <a href="#">First Principle Consultants</a>
+              Developer and Digital Marketing Expert at{" "}
+              <a href="#">Cria Design Agency</a>
             </h3>
-            <p>
+            <br />
+            {/* <p>
               <ul>
                 <li>
                   - Led the development, execution, and launch of a
@@ -92,7 +94,7 @@ const Experience = () => {
                   specific market needs.
                 </li>
               </ul>
-            </p>
+            </p> */}
             <div className="job-tags">
               <span className="tag">Figma</span>
               <span className="tag">Adobe Photoshop</span>
@@ -104,14 +106,15 @@ const Experience = () => {
           <div className="job-entry">
             <span className="job-date">Oct 2023 - Present</span>
             <h3>
-              Front-End Developer at <a href="#">Cria Design Agency</a>
+              Front-End Developer at <a href="#">MenuCloud</a>
             </h3>
-            <p>
+            <br />
+            {/* <p>
               Deliver high-quality, robust production code for a diverse array
               of projects for clients including Harvard Business School,
               Everytown for Gun Safety, Pratt Institute, Koala Health,
               Vanderbilt University, The 19th News, and more.
-            </p>
+            </p> */}
             <div className="job-tags">
               <span className="tag">Present</span>
               <span className="tag">Present</span>
@@ -123,14 +126,16 @@ const Experience = () => {
           <div className="job-entry">
             <span className="job-date">Oct 2023 - Present</span>
             <h3>
-              Front-End Developer at <a href="#">Cria Design Agency</a>
+              Co-Founder and Developer at{" "}
+              <a href="#">Andre Laredo Fine Art Prints</a>
             </h3>
-            <p>
+            <br />
+            {/* <p>
               Deliver high-quality, robust production code for a diverse array
               of projects for clients including Harvard Business School,
               Everytown for Gun Safety, Pratt Institute, Koala Health,
               Vanderbilt University, The 19th News, and more.
-            </p>
+            </p> */}
             <div className="job-tags">
               <span className="tag">Present</span>
               <span className="tag">Present</span>

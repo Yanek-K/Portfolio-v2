@@ -3,10 +3,18 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: {
+    main: "./src/index.js",
+    blog: "./src/blog.js",
+    about: "/src/about.js",
+  },
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "index.bundle.js",
+    filename: "blog.bundle.js",
+    filename: "about.bundle.js",
+    filename: "[name].bundle.js",
+    clean: true,
   },
   module: {
     rules: [
@@ -38,7 +46,23 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/index.html",
       filename: "index.html",
+      chunks: ["main"],
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/about.html",
+      filename: "about.html",
+      chunks: ["about"],
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/blog.html",
+      filename: "blog.html",
+      chunks: ["blog"],
+    }),
+    //     new HtmlWebpackPlugin({
+    //   template: "./src/contact.html",
+    //   filename: "contact.html",
+    //   chunks: ["contact"],
+    // }),
     new MiniCssExtractPlugin({
       filename: "[name].css",
     }),
