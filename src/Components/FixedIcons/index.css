@@ -15,13 +15,13 @@
 }
 
 .fixed-icons .icon {
-  background: var(--white);
+  /* background: var(--white); */
   /* color: var(--navy); */
-  padding: 10px;
+  /* padding: 10px; */
   border-radius: 50%;
   text-align: center;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,9 +30,9 @@
   background-size: contain; /* or cover */
 }
 
-/* .fixed-icons .icon:hover {
-  background: var(--green);
-} */
+.fixed-icons .icon:hover {
+  transform: scale(1.2);
+}
 
 .vertical-line {
   width: 1px;

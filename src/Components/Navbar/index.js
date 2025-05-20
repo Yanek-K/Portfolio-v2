@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./index.css";
+import logoUrl from "./../../Assets/logo.png";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -22,7 +23,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="navbar__wrap">
         <div className="navbar__wrap__left">
-          <h2>YK</h2>
+          <img src={logoUrl} alt="Y K Logo" />
         </div>
         <nav className="navbar__wrap__right">
           <ul>
