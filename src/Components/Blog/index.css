@@ -1,1 +1,52 @@
- 
+.blog-list {
+  display: grid;
+  justify-content: center;
+  margin: var(--margin-standard);
+  width: 80%;
+  margin-bottom: 6rem;
+}
+.post-card {
+  border-bottom: 1px solid var(--white);
+  padding: 4rem 0rem 3rem 0rem;
+}
+
+.post-card a {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  width: 1000px;
+}
+
+.card-img {
+  width: 20%;
+  margin: 1rem;
+  margin-right: 3em;
+}
+
+.post-card h3 {
+  margin: 0.5rem;
+  color: var(--white);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+}
+
+.card-data {
+  width: 80%;
+}
+
+.excerpt {
+  margin: 0.5rem;
+  color: var(--white);
+  /* height: 4rem; */
+  /* display: block; */
+  width: auto;
+  color: var(--white);
+  font-size: 1rem;
+}
+.meta {
+  margin: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--slate);
+  padding-top: 1rem;
+}
