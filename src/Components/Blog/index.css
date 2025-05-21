@@ -1,52 +1,86 @@
-.blog-list {
-  display: grid;
-  justify-content: center;
-  margin: var(--margin-standard);
-  width: 80%;
-  margin-bottom: 6rem;
+/* Container for the entire blog section */
+.blog-section {
+  margin: 8rem 9rem 1rem 11rem;
+  padding-bottom: 8rem;
 }
+
+/* Wrap: two columns (nav / content) */
+.blog__wrap {
+  display: grid;
+  grid-template-columns: 220px 1fr; /* nav = 220px, content fills remaining */
+  gap: 2rem; /* space between nav & content */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.blog__nav {
+  padding: 2rem;
+}
+
+/* The list of posts stacks vertically */
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* space between each post-card */
+  margin: 0; /* reset any margins */
+  padding: 0; /* reset any padding */
+}
+
+/* Each card is just text content now */
 .post-card {
   border-bottom: 1px solid var(--white);
-  padding: 4rem 0rem 3rem 0rem;
+  padding: 1.5rem 0; /* vertical padding */
 }
 
+/* Make the entire title/excerpt clickable */
 .post-card a {
-  color: inherit;
+  display: block;
   text-decoration: none;
-  display: flex;
-  width: 1000px;
+  color: inherit;
+  width: 100%; /* fill the content column */
 }
 
-.card-img {
-  width: 20%;
-  margin: 1rem;
-  margin-right: 3em;
-}
-
+/* Title styling */
 .post-card h3 {
-  margin: 0.5rem;
-  color: var(--white);
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 0 0 0.5rem;
   font-size: 1.5rem;
+  color: var(--white);
 }
 
-.card-data {
-  width: 80%;
-}
-
+/* Excerpt wraps fully */
 .excerpt {
-  margin: 0.5rem;
-  color: var(--white);
-  /* height: 4rem; */
-  /* display: block; */
-  width: auto;
-  color: var(--white);
+  margin: 0 0 0.5rem;
   font-size: 1rem;
+  line-height: 1.6;
+  color: var(--white);
+  width: 100%;
+  white-space: normal;
 }
+
+/* Meta info (date & author) */
 .meta {
-  margin: 0.5rem;
   font-size: 0.9rem;
   color: var(--slate);
-  padding-top: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .blog__wrap {
+    grid-template-columns: 100px 1fr;
+  }
+  .blog__nav {
+    padding-right: 0rem;
+    padding-left: 0rem;
+  }
+}
+
+/* —— Responsive breakpoint —— */
+@media (max-width: 900px) {
+  .blog__wrap {
+    grid-template-columns: 1fr; /* collapse to one column */
+  }
+  .blog__nav {
+    border-right: none;
+    border-bottom: 1px solid var(--slate);
+    margin-bottom: 1.5rem;
+  }
 }
