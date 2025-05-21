@@ -6,10 +6,11 @@ const Bloglist = ({ posts }) => {
     <div className="blog-section">
       <div className="blog__wrap">
         <aside className="blog__nav">
-          <p>link</p>
-          <p>link</p>
-          <p>link</p>
-          <p>link</p>
+          <h4>by Yanek K.</h4>
+          {/* <p>Sponsor</p>
+          <p>Contact Me</p>
+          <p>About</p>
+          <p>link</p> */}
         </aside>
         <div className="blog__content">
           <div className="blog-list">

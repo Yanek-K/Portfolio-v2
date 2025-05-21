@@ -14,7 +14,10 @@
 }
 
 .blog__nav {
-  padding: 2rem;
+  padding-top: 1.7rem;
+}
+.blog__nav h4 {
+  font-size: 1.3rem;
 }
 
 /* The list of posts stacks vertically */
@@ -22,14 +25,13 @@
   display: flex;
   flex-direction: column;
   gap: 2rem; /* space between each post-card */
-  margin: 0; /* reset any margins */
-  padding: 0; /* reset any padding */
 }
 
 /* Each card is just text content now */
 .post-card {
   border-bottom: 1px solid var(--white);
   padding: 1.5rem 0; /* vertical padding */
+  width: 90%;
 }
 
 /* Make the entire title/excerpt clickable */
@@ -37,20 +39,20 @@
   display: block;
   text-decoration: none;
   color: inherit;
-  width: 100%; /* fill the content column */
+  width: 95%; /* fill the content column */
 }
 
 /* Title styling */
 .post-card h3 {
   margin: 0 0 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: var(--white);
 }
 
 /* Excerpt wraps fully */
 .excerpt {
   margin: 0 0 0.5rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.6;
   color: var(--white);
   width: 100%;
@@ -65,16 +67,19 @@
 
 @media (max-width: 1200px) {
   .blog__wrap {
-    grid-template-columns: 100px 1fr;
+    grid-template-columns: 150px 1fr;
   }
   .blog__nav {
-    padding-right: 0rem;
+    padding-right: 1rem;
     padding-left: 0rem;
   }
 }
 
 /* —— Responsive breakpoint —— */
-@media (max-width: 900px) {
+@media (max-width: 850px) {
+  .blog-section {
+    margin: 2rem;
+  }
   .blog__wrap {
     grid-template-columns: 1fr; /* collapse to one column */
   }
@@ -82,5 +87,6 @@
     border-right: none;
     border-bottom: 1px solid var(--slate);
     margin-bottom: 1.5rem;
+    width: 90%;
   }
 }
