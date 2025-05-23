@@ -9,19 +9,13 @@ const ContactPage = () => {
           <div class="screen-body">
             <div class="screen-body-item left">
               <div class="app-title">
-                <h2>CONTACT</h2>
-                <h3>US</h3>
+                <h2>CONTACT ME</h2>
               </div>
-              <div class="app-contact">EMAIL: yanek.dev@gmail.com</div>
             </div>
             <div class="screen-body-item">
               <div class="app-form">
                 <div class="app-form-group">
-                  <input
-                    class="app-form-control"
-                    placeholder="NAME"
-                    value="Name"
-                  />
+                  <input class="app-form-control" placeholder="NAME" />
                 </div>
                 <div class="app-form-group">
                   <input class="app-form-control" placeholder="EMAIL" />

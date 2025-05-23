@@ -194,6 +194,7 @@ code {
 :root {
   --navy: #101e2e; /* almost-black ink blue */
   --green: #d8a100; /* bold mustard yellow */
+  /* nice pink #ea1d6f; */
   --slate: #8a95a1; /* mid-tone slate */
   --white: #eceff3; /* pale ivory */
   --primary-font-family: "Montserrat", -apple-system, BlinkMacSystemFont,
